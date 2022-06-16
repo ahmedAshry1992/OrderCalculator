@@ -39,7 +39,7 @@ namespace CalculateOrder
         {
             switch (weight)
             {
-                case double weigtRange1 when weigtRange1 >= 1 && weigtRange1 <= 10: return 2;
+                case double weigtRange1 when weigtRange1 >= 0 && weigtRange1 <= 10: return 2;
                 case double weigtRange2 when weigtRange2 > 10 && weigtRange2 <= 20: return 3;
                 case double weigtRange3 when weigtRange3 > 20 && weigtRange3 <= 30: return 4;
                 default: return 10;
